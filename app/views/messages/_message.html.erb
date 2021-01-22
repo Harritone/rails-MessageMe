@@ -1,0 +1,9 @@
+<% @messages.each do |msg| %>
+  <div class="event">
+    <div class="content">
+      <div class="summary">
+        <em><%= msg.user.username %></em>: <%= msg.body %>
+      </div>
+    </div>
+  </div>
+<% end %>
