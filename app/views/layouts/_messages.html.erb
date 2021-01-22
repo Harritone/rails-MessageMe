@@ -1,11 +1,6 @@
 <% flash.each do |type, content| %>
   <div class="ui <%= type %> message">
     <i class="close icon"></i>
-    <div class="header">
-      There were some errors with your submission
-    </div>
-    <ul class="list">
-      <li><%= content %></li>
-    </ul>
+    <%= content %>
   </div>
 <% end %>
